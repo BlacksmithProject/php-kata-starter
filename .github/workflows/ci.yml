@@ -20,4 +20,4 @@ jobs:
       - name: Install Dependencies
         run: composer install
       - name: PHPUnit
-        run: vendor/bin/phpunit
+        run: vendor/bin/phpunit --colors=auto
