@@ -12,3 +12,7 @@ This is a simple php kata starter:
 
 - `make composer` to install dependencies
 - `make phpunit` to run your tests
+
+## Katas:
+
+Katas are available in the [katas folder](https://github.com/BlacksmithProject/php-kata-starter/tree/main/katas).
