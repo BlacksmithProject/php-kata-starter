@@ -7,9 +7,7 @@ use PHPUnit\Framework\TestCase;
 
 final class ToRemoveWorkingTest extends TestCase
 {
-    /**
-     * @test
-     */
+    /** @test */
     public function true should be true(): void
     {
         self::assertTrue(true);
