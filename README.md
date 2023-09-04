@@ -10,8 +10,9 @@ This is a simple php kata starter:
 
 ## How to use it:
 
-- `make composer` to install dependencies
-- `make phpunit` to run your tests
+- `make init` to setup the project
+- `make test` to run your tests
+- `make test-with-coverage` to run your tests and generate code coverage
 
 ## Katas:
 

@@ -1,18 +1,13 @@
 version: '3'
 services:
-  composer:
-    user: "${USER_ID}:${GROUP_ID}"
-    image: composer:2.5
-    environment:
-      - COMPOSER_MEMORY_LIMIT=-1
-      - COMPOSER_CACHE_DIR=/app/var/cache/composer
-    volumes:
-      - .:/app
-    restart: no
   php:
+    container_name: php
     user: "${USER_ID}:${GROUP_ID}"
-    image: php:8.2-cli
+    build:
+      context: .
+      dockerfile: Dockerfile
     restart: no
     volumes:
       - .:/app
+      - ./docker/xdebug.ini:/usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
     working_dir: /app
